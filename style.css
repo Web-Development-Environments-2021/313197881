@@ -1,7 +1,50 @@
-#menu
-{
+#toolBar{
 	position: fixed;
-	width: 100%;
-	height: 35px;
-	background: white;
+	background-color: white;
+	padding-top: 0px;
+
+}
+
+body{
+	font-family: Apple Chancery, cursive;
+}
+
+#toolBar a{
+	text-decoration: none;
+	break-after: none;
+	color: red;
+}
+#toolBar a:hover{
+	color: green;
+}
+
+div{
+	padding-top: 65px;
+}
+
+/*#aboutMe{
+	padding-top: 65px;
+}*/
+#myPhotos ul{
+	list-style: none;
+	align-items: center;
+}
+
+
+#myPhotos li{
+	display: inline;
+}
+
+.Photos{
+	width: 30%;
+	height: 300px;
+	border-radius: 20px;
+	padding: 10px;
+
+}
+h1{
+	text-align: center;
+}
+h2{
+	text-align: center;
 }
