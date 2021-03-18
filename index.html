@@ -56,28 +56,32 @@
 
 		<div id = "myForm" align="center">
 			
-		<form action="mailto:ophirpo@post.bgu.ac.il" onsubmit="sendMail(this)">
+		<form action="#" onsubmit="sendMail(this)">
 
 			<P><STRONG>Subject: </STRONG>
-			<INPUT NAME = "subject" TYPE = "text" SIZE = "36"></P>
+			<INPUT NAME = "subject" TYPE = "text" SIZE = "34"></P>
 
 			<P><STRONG>Content:</STRONG> 
-			<TEXTAREA NAME = "content" ROWS = "4" COLS = "36"></TEXTAREA></P>
+			<TEXTAREA  NAME = "content" ROWS = "4" COLS = "36"></TEXTAREA></P>
 
 			<P><STRONG>Add Smiley Emoji:</STRONG><BR>
-			<INPUT NAME = "AddSmiley" TYPE = "radio" CHECKED> &#128512 
-			<INPUT NAME = "AddSmiley" TYPE = "radio"> &#128526
-			<INPUT NAME = "AddSmiley" TYPE = "radio"> &#129488
+			<INPUT NAME = "AddSmiley" TYPE = "radio" CHECKED value="&#128512"> &#128512 
+			<INPUT NAME = "AddSmiley" TYPE = "radio" value="&#128526"> &#128526
+			<INPUT NAME = "AddSmiley" TYPE = "radio" value="&#129488"> &#129488
 			</P>
 
-			<INPUT TYPE = "submit" VALUE = "Submit Your Entries"> 
-			<INPUT TYPE = "reset" VALUE = "Clear Your Entries">
+			<INPUT TYPE = "submit" VALUE = "Send Email"> 
+			<INPUT TYPE = "reset" VALUE = "Clear">
   		</form>
 		  <script >
 			  function sendMail(form){
-				  let subject = form.subject;
-				  let content = form.content;
-				  
+				let subject = form.subject.value;
+				let content = form.content.value;
+				let smiley = form.AddSmiley.value;
+				let message = "mailto:ophirpo@post.bgu.ac.il?subject=" + subject + " &content=" + content + " "+smiley;
+				window.open(message);
+				alert("ok.")
+				
 			  }
 		  </script>
   		</div>
