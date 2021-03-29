@@ -1,24 +1,3 @@
-#toolBar{
-	position: fixed;
-	/* background-color: white; */
-	padding-top: 0px;
-	height: 10%;
-
-}
-
-
-#aboutMe{
-	/* background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIASTMZZWdkKNRg2SG0UWW8y7S1I2LSWIIBA&usqp=CAU"); */
-	background-image:url("background2.png");
-	
-	margin: 2% 4%;
-	background-repeat:unset;
-	background-blend-mode: lighten;
-	color: rgba(8, 15, 15, 0.906);
-	padding: 5% 5% 5% 2%;	
-	
-}
-
 
 body{
 	
@@ -27,10 +6,34 @@ body{
 	align-content: center;
 	text-align: center;
 	background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmzJAYyQbOkVm01aCqjWYivn5ZXjfWcUI46w&usqp=CAU);
-	background-repeat: repeat;
+	/* background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1vbxRYuF3ENPrrY_C8u7-dU6tzCc5k5A2HQ&usqp=CAU); */
+	
 	
 }
+div{
+	padding-top: 5%;
+	text-align: center;
+	align-items: center;
+	align-self: center;
+	margin-left: 10%;
+	margin-right: 10%;
+	
+}
+h1{
+	text-align: center;
+}
+h2{
+	text-align: center;
+	size: 20;
+}
+#toolBar{
+	position: fixed;
+	/* background-color: white; */
+	padding-top: 0px;
+	height: 10%;
+	margin: 0px;
 
+}
 #toolBar a{
 	text-decoration: none;
 	break-after: none;
@@ -39,28 +42,41 @@ body{
 #toolBar a:hover{
 	text-decoration: underline;
 }
-
-div{
-	padding-top: 5%;
-	text-align: center;
-	align-items: center;
-	align-self: center;
-	
-}
-
-#myPhotos ul{
-	list-style: none;
-	align-items: center;
-	
-}
-
 .title{
 	border: 2px;
 	text-decoration:solid;
 	padding-right: 5%;
 	margin:2% 4%;
+
+	
 	
 }
+.title span{
+	/* content: ""; */
+  	/* position: absolute; */
+  	height: 5px;
+  	border-bottom: 2px solid rgb(19, 12, 12);
+  	border-top: 2px solid rgb(19, 10, 10);
+	/* width: 600px; */
+}
+
+
+#aboutMe{
+	/* background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIASTMZZWdkKNRg2SG0UWW8y7S1I2LSWIIBA&usqp=CAU"); */
+	background-image:url("background2.png");
+	background-position: center;
+	background-repeat:unset;
+	background-blend-mode: lighten;
+	color: rgba(8, 15, 15, 0.906);
+	padding: 3% 5% 4% 2%;	
+}
+
+
+ul{
+	list-style: none;
+	align-items: center;	
+}
+
 
 #myPhotos li{
 	display: inline;
@@ -76,8 +92,15 @@ div{
 iframe{
 	padding-right: 5%;
 }
+
+#myPhotos{
+	margin: 0% 5%;
+}
 #QRcode img{
 	padding-right: 5%;
+}
+#QandA{
+	padding-left:50px;
 }
 
 #myForm{
@@ -90,12 +113,4 @@ iframe{
 	border-radius: 8px;
 	
 	
-}
-
-h1{
-	text-align: center;
-}
-h2{
-	text-align: center;
-	size: 20;
 }
